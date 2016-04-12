@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "Select";
+    Layout = null;
+}
+
+
+<html>
+<head>
+    <title></title>   
+    <link href="~/Content/select.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script> 
+    <script>
+        $(function () {
+            changeHeight();
+            $(window).resize(changeHeight); 
+            $("#search").bind("click", select); 
+        })
+
+        function changeHeight() {
+            var pageHeight = $(window).height();
+            $("#result").height(pageHeight - 243);
+        }
+
+        function navTabs() {
+            $("#myTabs a").click(function (e) {
+                var tabPane = $(this).attr("data-pane");
+                $("#myTabs li").removeClass("active");
+                $(this).parent().addClass("active");
+                $(".tab-pane").hide();
+                $("#" + tabPane).show();
+                $(this).focus();
+            });
+        }
+  
+    function select() {
+        var sql = $("#sql").val();
+        if (sql) {
+            $.ajax({
+                url: "@Url.Action("SelectTable","Home")",
+                data: "sql=" + sql + "&dbName=@(ViewBag.dbName)&connectionStringName=@(ViewBag.Conn)",
+                type: "post",
+                success: function (data) {
+                    $("#result").html(data);
+                    navTabs();
+                }
+            })
+        }
+    }
+    </script>
+</head>
+<body>
+    <div>       
+        <form method="post" action="@Url.Action("ExportTable","Home")" enctype="multipart/form-data">
+            <textarea id="sql" name="sql">@Html.Raw(ViewBag.SQL)</textarea> 
+            <input type="hidden" name="dbName"  value="@Html.Raw(ViewBag.dbName)" />
+            <input type="hidden" name="connectionStringName" value="@Html.Raw(ViewBag.Conn)" />   
+            <input type="button" id="search" value="查询" />          
+            <input type="submit" value="导出Excel" />
+        </form>         
+    </div> 
+    <div id="result"></div>
+</body>
+</html>
+

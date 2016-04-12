@@ -1,0 +1,9 @@
+F:\t_work\tool\CommonTool\CommonTool\bin\Debug\CommonTool.exe.config
+F:\t_work\tool\CommonTool\CommonTool\bin\Debug\CommonTool.exe
+F:\t_work\tool\CommonTool\CommonTool\bin\Debug\CommonTool.pdb
+F:\t_work\tool\CommonTool\CommonTool\obj\Debug\CommonTool.csprojResolveAssemblyReference.cache
+F:\t_work\tool\CommonTool\CommonTool\obj\Debug\CommonTool.Form1.resources
+F:\t_work\tool\CommonTool\CommonTool\obj\Debug\CommonTool.Properties.Resources.resources
+F:\t_work\tool\CommonTool\CommonTool\obj\Debug\CommonTool.csproj.GenerateResource.Cache
+F:\t_work\tool\CommonTool\CommonTool\obj\Debug\CommonTool.exe
+F:\t_work\tool\CommonTool\CommonTool\obj\Debug\CommonTool.pdb

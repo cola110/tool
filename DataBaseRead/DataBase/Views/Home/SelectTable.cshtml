@@ -1,0 +1,53 @@
+﻿@model   DataSet
+@using System.Data
+@{
+    ViewBag.Title = "查询结果";
+    Layout = null;
+}
+ <div id="myTabs">
+    <ul>
+        @for (int i = 0; i < Model.Tables.Count; i++)
+        {
+            string tableName = Model.Tables[i].TableName;
+            <li @(i==0?Html.Raw("class='active'") :Html.Raw(""))>
+                <a href="#@tableName" data-pane="@tableName">@tableName</a>
+            </li>
+        } 
+    </ul>
+</div>
+
+<div id="myTabContent" class="tab-content">
+    @for (int i = 0; i < Model.Tables.Count; i++)
+    {
+        string tableName = Model.Tables[i].TableName;
+    <div class="tab-pane @(i!=0?Html.Raw("hide"):Html.Raw("")) " id="@tableName">
+        <table class="gridtable">
+            @{
+                DataTable dt = Model.Tables[i];
+                int columnTotal = dt.Columns.Count;
+            }
+            <tr>
+                @if (columnTotal > 0)
+                {
+                    <th>序号</th>
+                }
+                @foreach (DataColumn dc in dt.Columns)
+                {
+                    <th>@dc.ColumnName</th>
+                }
+            </tr>
+            @for (int rowIndex = 0; rowIndex < dt.Rows.Count; rowIndex++)
+            {
+                DataRow dr = dt.Rows[rowIndex];
+                <tr>
+                    <td>@(rowIndex + 1)</td>
+                    @for (int j = 0; j < columnTotal; j++)
+                    {
+                        <td>@dr[j]</td>
+                    }
+                </tr>
+            }
+        </table>        
+     </div> 
+    }
+</div> 
