@@ -15,6 +15,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBaseRead", "DataBaseRea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBase", "DataBaseRead\DataBase\DataBase.csproj", "{E1FB7435-EEB2-4095-B0DA-67AA4A4989C7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{354A98B4-B294-4A83-B066-0F59F3453B88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cola_console", "Console\cola_console\cola_console.csproj", "{91CDF9FB-18FF-484F-A680-0B21767CA339}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +41,10 @@ Global
 		{E1FB7435-EEB2-4095-B0DA-67AA4A4989C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1FB7435-EEB2-4095-B0DA-67AA4A4989C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1FB7435-EEB2-4095-B0DA-67AA4A4989C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91CDF9FB-18FF-484F-A680-0B21767CA339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91CDF9FB-18FF-484F-A680-0B21767CA339}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91CDF9FB-18FF-484F-A680-0B21767CA339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91CDF9FB-18FF-484F-A680-0B21767CA339}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,5 +53,6 @@ Global
 		{67A3FA23-B456-4D05-9F30-4BEFA22D24D4} = {A752192D-DCC1-4A62-BF76-E9D781C08633}
 		{CC03D672-E653-484F-9DEC-BB258C119CB4} = {A752192D-DCC1-4A62-BF76-E9D781C08633}
 		{E1FB7435-EEB2-4095-B0DA-67AA4A4989C7} = {D1643E42-EE96-41A0-ADDC-7CDAA324A2A8}
+		{91CDF9FB-18FF-484F-A680-0B21767CA339} = {354A98B4-B294-4A83-B066-0F59F3453B88}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,6 @@
+F:\t_work\tool\Console\cola_console\bin\Debug\cola_console.exe.config
+F:\t_work\tool\Console\cola_console\bin\Debug\cola_console.exe
+F:\t_work\tool\Console\cola_console\bin\Debug\cola_console.pdb
+F:\t_work\tool\Console\cola_console\obj\Debug\cola_console.exe
+F:\t_work\tool\Console\cola_console\obj\Debug\cola_console.pdb
+F:\t_work\tool\Console\cola_console\obj\Debug\cola_console.csprojResolveAssemblyReference.cache

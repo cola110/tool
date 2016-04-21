@@ -77,7 +77,7 @@ namespace DataBase
         public static bool ExportExcelWithAspose(DataSet ds, string path)
         {
             bool succeed = false;
-            if (ds != null&&ds.Tables.Count>0)
+            if (ds != null && ds.Tables.Count > 0)
             {
                 try
                 {
@@ -92,7 +92,7 @@ namespace DataBase
                     {
                         workbook.Worksheets.Add(ds.Tables[tableCount].TableName);
                         Aspose.Cells.Worksheet cellSheet = workbook.Worksheets[tableCount];
-                      //  cellSheet.Name = ds.Tables[tableCount].TableName;
+                        //  cellSheet.Name = ds.Tables[tableCount].TableName;
 
                         int rowIndex = 0;
                         int colIndex = 0;
@@ -127,7 +127,7 @@ namespace DataBase
                             rowIndex++;
                         }
                         cellSheet.AutoFitColumns();
-                    } 
+                    }
                     path = Path.GetFullPath(path);
                     workbook.Save(path);
                     succeed = true;
