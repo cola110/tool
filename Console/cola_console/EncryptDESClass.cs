@@ -41,7 +41,7 @@ namespace cola_console
         /// DES解码
         /// </summary>
         /// <param name="strContent"></param>
-        /// <param name="strKey"></param>
+        /// <param name="strKey"></param>啊首发得分
         /// <returns></returns>
         public static string DecryptDES(string strContent, string strKey = "Dw&7#~d2")
         {
