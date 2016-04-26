@@ -38,7 +38,7 @@ namespace cola_console
         }
 
         /// <summary>
-        /// DES解码
+        /// DES解码 
         /// </summary>
         /// <param name="strContent"></param>
         /// <param name="strKey"></param>
