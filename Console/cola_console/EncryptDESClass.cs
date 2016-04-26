@@ -38,10 +38,10 @@ namespace cola_console
         }
 
         /// <summary>
-        /// DES解码 
+        /// DES解码
         /// </summary>
         /// <param name="strContent"></param>
-        /// <param name="strKey"></param>丰富的发放dsdfasdfasd大苏打
+        /// <param name="strKey"></param>
         /// <returns></returns>
         public static string DecryptDES(string strContent, string strKey = "Dw&7#~d2")
         {
